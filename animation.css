@@ -1,0 +1,22 @@
+/* Animations for the destinations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.destination {
+    animation: fadeIn 1s ease-in-out, slideIn 1s ease-in-out;
+}
